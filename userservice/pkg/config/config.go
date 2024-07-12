@@ -14,7 +14,7 @@ var (
 func Connect(){
 	var err error
 
-	d, err := gorm.Open(postgres.Open("host=localhost port=5432 user=dev dbname=go_books password=qwerty sslmode=disable"), &gorm.Config{})
+	d, err := gorm.Open(postgres.Open("host=localhost port=5432 user=dev dbname=go_users password=qwerty sslmode=disable"), &gorm.Config{})
 	
 	if err != nil{
 		log.Fatal("Failed to connect to database: ", err)
