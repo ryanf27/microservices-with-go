@@ -10,8 +10,8 @@ var db *gorm.DB
 
 type User struct {
 	gorm.Model
-	Username  string `json:"username"`
-	Email string `json:"email"`
+	Username  string `Json:"Username"`
+	Email string `Json:"Email"`
 }
 
 func init() {
